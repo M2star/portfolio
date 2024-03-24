@@ -1,7 +1,7 @@
 import AnimationLottie from "@/utils/animationLottiy";
-import GlowCard from "@/utils/glowCard";
 import Image from "next/image";
 import { BsPersonWorkspace } from "react-icons/bs";
+import GlowCard from "../glowCard/glowCard";
 import animationData from "/public/lottie/Animation - 1711178759658.json";
 const Experiences = () => {
   const data = [
@@ -17,7 +17,10 @@ const Experiences = () => {
     },
   ];
   return (
-    <section className="relative my-12 lg:my-16 z-50 border-y pt-16 pb-20 border-gray-800">
+    <section
+      id="experience"
+      className="relative mt-12 lg:mt-16 z-50 border-t pt-16 pb-20 border-gray-800"
+    >
       <Image
         src="/blur-23.svg"
         alt="img"
@@ -53,7 +56,7 @@ const Experiences = () => {
                 ( {item.data} )
               </div>
               <div className="flex items-center gap-6 pb-3 pt-10">
-                <span class="icon">
+                <span className="icon">
                   <BsPersonWorkspace />
                 </span>
                 <div>

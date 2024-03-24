@@ -24,6 +24,7 @@ module.exports = {
         blue: "rgb(var(--blue))",
         yellow: "rgb(var(--yellow))",
         cardBg: "var(--card-background-color)",
+        mainBg: "rgb(var(--background-rgb))",
       },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",

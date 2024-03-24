@@ -13,7 +13,6 @@ const AnimationLottie = ({ animation, width }) => {
       width: width,
     },
   };
-  console.log("Animation", animation);
   return <Lottie {...defaultOptions} />;
 };
 

@@ -3,14 +3,6 @@ import { FaGithub, FaLinkedinIn } from "react-icons/fa";
 import { MdDownload } from "react-icons/md";
 import { SiGmail } from "react-icons/si";
 const HeroSection = () => {
-  const yellow = {
-    name: "tushar",
-    skill: [],
-    hardworking: true,
-    har: function () {
-      return this.hardworking && this.hardworking;
-    },
-  };
   return (
     <section className="relative flex justify-between items-center flex-col py-4 lg:py-12">
       <Image
@@ -68,7 +60,7 @@ const HeroSection = () => {
           </div>
         </div>
         <div>
-          <div className="order-1 lg:order-2 from-[#1b1e27] border-[#1b2c68a0] relative rounded-lg border bg-gradient-to-r to-[#14151a]">
+          <div className="order-1 lg:order-2 border-[#1b2c68a0] relative rounded-lg border bg-gradient-to-r to-[#14151a] from-[#1b1e27] ">
             <div className="flex flex-row">
               <div className="h-[1px] w-full bg-gradient-to-r from-transparent via-pink-500 to-violet-600"></div>
               <div className="h-[1px] w-full bg-gradient-to-r from-violet-600 to-transparent"></div>
@@ -88,60 +80,64 @@ const HeroSection = () => {
                   <span className="text-sky-500 mr-2 ">=</span>
                   <span className="text-purple mr-2 ">{"{"}</span>
                 </div>
-                <div>
-                  <span className="text-red-500 mr-1">name:</span>
-                  <span className="text-green">{'"'}</span>
-                  <span className="text-green">tushar bawane</span>
-                  <span className="text-green">{'"'}</span>
-                  <span className="text-white">{","}</span>
-                </div>
-                <div>
-                  <span className="text-red-500 mr-1">skills:</span>
-                  <span className="text-sky-500 mr-1">{"['"}</span>
-                  <span className="text-green">react</span>
-                  <span className="text-green">{"', '"}</span>
-                  <span className="text-green">nextjs</span>
-                  <span className="text-green">{"', '"}</span>
-                  <span className="text-green">redux</span>
-                  <span className="text-green">{"', '"}</span>
-                  <span className="text-green">node</span>
-                  <span className="text-green">{"', '"}</span>
-                  <span className="text-green">tailwind</span>
-                  <span className="text-green">{"'"}</span>
-                  <span className="text-sky-500 ms-1">{"]"}</span>
-                  <span className="text-white">{","}</span>
-                </div>
-                <div>
-                  <span className="text-red-500 mr-1">hardworking:</span>
-                  <span className="text-orange-500">true</span>
-                  <span className="text-white">{","}</span>
-                </div>
-                <div>
-                  <span className="text-red-500 mr-1">quickLearning:</span>
-                  <span className="text-orange-500">true</span>
-                  <span className="text-white">{","}</span>
-                </div>
-                <div>
-                  <span className="text-red-500 mr-1">problemSolver:</span>
-                  <span className="text-orange-500">true</span>
-                  <span className="text-white">{","}</span>
-                </div>
-                <div>
-                  <span className="text-red-500 mr-1">hireable:</span>
-                  <span className="text-purple">function()</span>
-                  <span className="text-sky-500">{" { "}</span>
+                <div className="ps-14">
                   <div>
-                    <span className="text-purple mr-1">return</span>
-                    <span className="text-orange-300">this.</span>
-                    <span className="text-red-500 mr-1">hardworking && </span>
-                    <span className="text-orange-300">this.</span>
-                    <span className="text-red-500 mr-1">problemSolver &&</span>
-                    <span className="text-orange-300">this.</span>
-                    <span className="text-red-500 mr-1">
-                      skills.length {">"} 5
-                    </span>
+                    <span className="text-red-500 mr-1">name:</span>
+                    <span className="text-green">{'"'}</span>
+                    <span className="text-green">tushar bawane</span>
+                    <span className="text-green">{'"'}</span>
+                    <span className="text-white">{","}</span>
                   </div>
-                  <span className="text-sky-500 ms-3">{" }; "}</span>
+                  <div>
+                    <span className="text-red-500 mr-1">skills:</span>
+                    <span className="text-sky-500 mr-1">{"['"}</span>
+                    <span className="text-green">react</span>
+                    <span className="text-green">{"', '"}</span>
+                    <span className="text-green">nextjs</span>
+                    <span className="text-green">{"', '"}</span>
+                    <span className="text-green">redux</span>
+                    <span className="text-green">{"', '"}</span>
+                    <span className="text-green">node</span>
+                    <span className="text-green">{"', '"}</span>
+                    <span className="text-green">tailwind</span>
+                    <span className="text-green">{"'"}</span>
+                    <span className="text-sky-500 ms-1">{"]"}</span>
+                    <span className="text-white">{","}</span>
+                  </div>
+                  <div>
+                    <span className="text-red-500 mr-1">hardworking:</span>
+                    <span className="text-orange-500">true</span>
+                    <span className="text-white">{","}</span>
+                  </div>
+                  <div>
+                    <span className="text-red-500 mr-1">quickLearning:</span>
+                    <span className="text-orange-500">true</span>
+                    <span className="text-white">{","}</span>
+                  </div>
+                  <div>
+                    <span className="text-red-500 mr-1">problemSolver:</span>
+                    <span className="text-orange-500">true</span>
+                    <span className="text-white">{","}</span>
+                  </div>
+                  <div>
+                    <span className="text-red-500 mr-1">hireable:</span>
+                    <span className="text-purple">function()</span>
+                    <span className="text-sky-500">{" { "}</span>
+                    <div>
+                      <span className="text-purple mr-1">return</span>
+                      <span className="text-orange-300">this.</span>
+                      <span className="text-red-500 mr-1">hardworking && </span>
+                      <span className="text-orange-300">this.</span>
+                      <span className="text-red-500 mr-1">
+                        problemSolver &&
+                      </span>
+                      <span className="text-orange-300">this.</span>
+                      <span className="text-red-500 mr-1">
+                        skills.length {">"} 5
+                      </span>
+                    </div>
+                    <span className="text-sky-500">{" }; "}</span>
+                  </div>
                 </div>
                 <span className="text-purple">{" }; "}</span>
               </code>

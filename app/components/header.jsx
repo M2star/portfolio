@@ -10,16 +10,16 @@ const Header = () => {
               <Link href="#about"> About</Link>
             </li>
             <li className="text-base hover:font-semibold font-medium hover:text-purple">
-              <Link href="#about"> Experience</Link>
+              <Link href="#experience"> Experience</Link>
             </li>
             <li className="text-base hover:font-semibold font-medium hover:text-purple">
-              <Link href="#about">Skill</Link>
+              <Link href="#skill">Skill</Link>
             </li>
-            <li className="text-base hover:font-semibold font-medium hover:text-purple">
+            {/* <li className="text-base hover:font-semibold font-medium hover:text-purple">
               <Link href="#about">Education </Link>
-            </li>
+            </li> */}
             <li className="text-base hover:font-semibold font-medium hover:text-purple">
-              <Link href="#about">Projects</Link>
+              <Link href="#projects">Projects</Link>
             </li>
           </ul>
         </div>
