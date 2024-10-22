@@ -1,9 +1,10 @@
 "use client";
 import { projectData } from "@/data/projectData";
+import Link from "next/link";
 import React, { useState } from "react";
 import { VscJson } from "react-icons/vsc";
 const ProjectCard = () => {
-  const [projectName, setProjectName] = useState("Growpital App");
+  const [projectName, setProjectName] = useState("Zithara.ai");
   return (
     <>
       <div className="w-full md:max-w-[70%] rounded-md border border-[#1b2c68a0]  bg-gradient-to-r to-[#14151a] from-[#1b1e27]">
@@ -21,7 +22,7 @@ const ProjectCard = () => {
             {projectName}
           </div>
         </div>
-        <div className="overflow-scroll flex items-center space-x-2 border-t-[1px] py-3 px-2 lg:px-4 border-indigo-500">
+        <div className="overflow-auto flex items-center space-x-2 border-t-[1px] py-3 px-2 lg:px-4 border-indigo-500">
           {projectData.map((item) => (
             <div
               key={item.name}
@@ -61,6 +62,19 @@ const ProjectCard = () => {
                       </span>
                       <span className="text-white">{", "}</span>
                     </div>
+                    {project.url && (
+                      <div>
+                        <span className="text-red-500">url:</span>
+                        <Link href={project.url}>
+                          <span className="text-yellow underline">
+                            {"'"}
+                            {project.url}
+                            {"'"}
+                          </span>
+                        </Link>
+                        <span className="text-white">{", "}</span>
+                      </div>
+                    )}
                     <div>
                       <span className="text-red-500">tools:</span>
                       <span className="text-gray-400">{` [`}</span>

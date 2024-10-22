@@ -1,5 +1,35 @@
 export const projectData = [
   {
+    name: "Zithara.ai",
+    fileName: "zitharaAI.json",
+    roll: "Web Developer",
+    description:
+      "Developed and managed the Zithara.ai platform, focusing on chat agents while contributing to various other features and functionalities.",
+    url: "https://app.zithara.com",
+    technologies_used: [
+      "Next.js",
+      "PostgreSQL",
+      "Socket.io",
+      "DynamoDB",
+      "JavaScript",
+      "HTML5",
+      "CSS3",
+    ],
+    responsibilities: [
+      "Designed and implemented chat agents for integration with Meta platforms (Facebook, WhatsApp, Instagram).",
+      "Developed a variety of features to enhance user experience across the platform.",
+      "Created dynamic templates for chat agents and other interactive elements, improving engagement.",
+      "Managed backend development using PostgreSQL and DynamoDB for efficient data handling.",
+      "Ensured real-time communication with Socket.io to support responsive chat functionalities.",
+      "Collaborated with UI/UX designers to deliver intuitive and user-friendly interfaces.",
+    ],
+    achievements: [
+      "Successfully launched the Zithara.ai platform, driving increased user interaction through various features, including chat agents.",
+      "Received positive feedback from users for the comprehensive and streamlined functionality of the platform.",
+      "Implemented analytics to monitor user engagement and continuously improved features based on user feedback.",
+    ],
+  },
+  {
     name: "Growpital App",
     fileName: "growpitalApp.json",
     roll: "Frontend Developer",
