@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import { FaGithub, FaLinkedinIn } from "react-icons/fa";
 import { MdDownload } from "react-icons/md";
 import { SiGmail } from "react-icons/si";
@@ -47,16 +48,16 @@ const HeroSection = () => {
             </span>
           </div>
           <div className=" flex items-center gap-4 flex-wrap">
-            <button className="border rounded-full min-w-12 px-5 py-3 border-gray-800 text-gray-400 hover:border-purple hover:bg-pink-300/10 font-semibold text-lg">
+            {/* <button className="border rounded-full min-w-12 px-5 py-3 border-gray-800 text-gray-400 hover:border-purple hover:bg-pink-300/10 font-semibold text-lg">
               Contact Me
-            </button>
-            <a
+            </button> */}
+            <Link
               href="/final-resume.pdf"
               download="/final-resume.pdf"
               className="border flex items-center gap-2 rounded-full min-w-12 px-5 py-3 bg-green text-black border-green text-lg font-semibold"
             >
               Get Resume <MdDownload />
-            </a>
+            </Link>
           </div>
         </div>
         <div>
